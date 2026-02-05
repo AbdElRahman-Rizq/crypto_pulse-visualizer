@@ -36,7 +36,7 @@ function App() {
       .catch((error) => {
         console.error('Error fetching currencies', error);
       });
-  }, []);
+  }, [currency]);
 
   useEffect(() => {
     const container = chartDivRef.current;
