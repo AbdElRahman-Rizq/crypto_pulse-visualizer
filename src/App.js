@@ -25,9 +25,12 @@ function App() {
       .then((list) => {
         if (Array.isArray(list) && list.length > 0) {
           setSupportedCurrencies(list);
-          if (!list.includes(currency)) {
-            setCurrency(list[0]);
-          }
+          setCurrency((prevCurrency) => {
+            if (list.includes(prevCurrency)) {
+              return prevCurrency;
+            }
+            return list[0] ?? prevCurrency;
+          });
         }
       })
       .catch((error) => {
