@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+ # CryptoPulse Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive dashboard built with React and amCharts 5 that showcases real-time Bitcoin market data alongside a global crypto presence snapshot. Designed as a portfolio-ready project to demonstrate data visualization, responsive UI, and polished UX for both desktop and mobile screens.
 
-## Available Scripts
+![CryptoPulse dashboard preview](./docs/media/Screenshot.jpeg)
 
-In the project directory, you can run:
+**Live Demo:** https://crypto-pulse-visualizer-1spq-d4i76ztdy-rizqs-projects-46fdbc99.vercel.app/
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Live Bitcoin price line chart** powered by the CoinGecko API with currency switching (USD, EUR, EGP, GBP, and the rest of the API-supported list).
+- **Export-ready visuals** using amCharts’ exporting plugin (PNG, JPG, SVG, PDF, XLSX).
+- **Animated world map** highlighting the global reach of crypto markets via amCharts geodata.
+- **Dark-mode dashboard** with responsive grid layout and touch-friendly controls.
+- **Custom tooltips & loading states** for a polished, professional experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- React 19 (Create React App)
+- amCharts 5 (XY + Map + Exporting plugins)
+- CoinGecko public API
+- Modern CSS (flex/grid layouts, custom controls)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+```bash
+# install dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# start dev server
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# build for production
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open http://localhost:3000 to explore the dashboard. The page will reload if you make edits.
 
-### `npm run eject`
+## Configuration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Area | Description |
+| --- | --- |
+| `src/App.js` | Main dashboard logic: currency dropdown, BTC chart, loading state |
+| `src/components/CryptoMap.js` | Encapsulated map component with exporting toggle |
+| `src/App.css` | Theme, grid layout, card styling, dropdown polish |
+| `docs/media/Screenshot.jpeg` | Marketing preview used in this README |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Roadmap Ideas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Add historical range selector (7/30/90 days).
+- Display additional metrics (volume, dominance) beneath the line chart.
+- Highlight regions on the map based on live market sentiment.
+- Package the dashboard as a deployable static build (Vercel/Netlify).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+1. Fork the repo
+2. Create a feature branch (`git checkout -b feature/amazing`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing`)
+5. Open a Pull Request
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open-sourced for portfolio/demo purposes. Adapt it freely but please provide attribution when showcasing derived work.
