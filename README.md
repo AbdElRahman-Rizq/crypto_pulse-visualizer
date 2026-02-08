@@ -4,7 +4,7 @@ An interactive dashboard built with React and amCharts 5 that showcases real-tim
 
 ![CryptoPulse dashboard preview](./docs/media/Screenshot.jpeg)
 
-**Live Demo:** https://crypto-pulse-visualizer-1spq-d4i76ztdy-rizqs-projects-46fdbc99.vercel.app/
+**Live Demo:** https://crypto-pulse-visualizer-one.vercel.app/
 
 ## Features
 
